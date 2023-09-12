@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FCFDFE;
+}
+
+/* -------------common style---------------- */
+.container {
+    width: 1009px;
+    margin: 90px auto;
+
+}
+
+/* -------------------navigation and hero section style------------------  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 30px 70px 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar>li {
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.navbar>li a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: #000;
+}
+
+.navbar>li a:hover {
+    color: #F04037;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+/* Dropdown menu style  */
+.demos {
+    position: relative;
+}
+
+.submenu {
+    width: 142px;
+    background-color: #fff;
+    padding: 10px 84px 21px 28px;
+    border-top: 4px solid #5454D4;
+    outline: 1px solid #EAE9F2;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.submenu>li, .startup-submenu li {
+    margin: 15px 0;
+    list-style: none;
+}
+
+.submenu>li a:hover {
+    margin: 15px 0;
+    list-style: none;
+    color: #5454D4;
+}
+
+.demos:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%
+}
+.startup-submenu {
+    width: 142px;
+    background-color: #fff;
+    padding: 10px 84px 21px 28px;
+    border-top: 4px solid #F04037;
+    outline: 1px solid #EAE9F2;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 80%;
+    Left: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+
+.startup:hover .startup-submenu{
+    opacity: 1;
+    visibility: visible;
+    top: 35%
+}
+
+
+
+/* ---------------------- */
+.primary-btn {
+    background-color: #F04037;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.primary-btn:hover {
+    background-color: #5454D4;
+}
+
+.nav-btn {
+    padding: 12px 16px;
+    font-weight: 600;
+}
+
+.hero-container {
+    display: flex;
+    gap: 146px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-container-btn {
+    width: 475px;
+    background-color: #fff;
+    border: 1px solid #EAE9F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.hero-container-btn span input {
+    border: none;
+    padding: 10px 10px 10px 4px;
+}
+
+.hero-container-btn span input:focus {
+    outline: none;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.fa-envelope {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.hero-btn {
+    padding: 16px 42px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+/* this is Rating style  */
+
+.rating-container {
+    background-color: #5454D4;
+    margin: 93px 0 113px;
+}
+
+.rating-container-info {
+    display: flex;
+    gap: 56px;
+    padding: 115px 0;
+}
+
+.rating-container-info p,
+small {
+    color: #ffffff;
+}
+
+.rating-container-info small {
+    color: #ffffffc4;
+}
+
+.rating {
+    color: #FEDC5A;
+}
+
+/* this is travel section style  */
+.travel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+/* .travel-container > div {
+    margin-right: 67px;
+} */
+
+.trip {
+    width: 400px;
+    height: 180px;
+    display: flex;
+    padding: 26px 68px 27px 20px;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.trip:hover {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 12px 34px 0px rgba(65, 62, 101, 0.10);
+    cursor: pointer;
+
+}
+
+.circle {
+    display: inline-block;
+    width: 131px;
+    height: 51px;
+    background-color: #5454D4;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 20px;
+}
+
+.number {
+    position: absolute;
+    top: 8px;
+    right: 21px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* this is a world famus place style  */
+.world-place-container {
+    display: flex;
+    gap: 125px;
+}
+
+.famus-place {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.famus-place .item2 img {
+    margin-top: 125px;
+}
+
+/* experiences section style */
+.experience-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.experience-container>div {
+    margin-right: 100px;
+}
+
+/* this is video section style  */
+.app-link {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 92px auto 118px;
+    text-align: center;
+
+}
+
+.app-link div img {
+    margin-right: 18px;
+}
+
+/* this is footer section style  */
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-menu li {
+    list-style: none;
+    transition: all 0.5s ease;
+}
+
+.footer-menu li:hover {
+    color: #F04037;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    gap: 154px;
+}
+
+.footer-container div {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+
+
+/*---------------------------------
+      style for Mobile screen
+ ------------------------------- */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: fit-content;
+    }
+
+    .navbar {
+        display: none;
+        
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-container {
+        gap: 50px;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .hero-container>div img {
+        width: 100%;
+    }
+
+    .hero-info {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 37px;
+    }
+
+    .hero-container-btn {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .rating-container {
+        width: fit-content;
+    }
+
+    .rating-container-info {
+        gap: 56px;
+        padding: 25px 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* This is travel section style  */
+    .travel-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .travel-container>div {
+        padding: 15px;
+    }
+
+    .trip {
+        height: 286px;
+        width: 80%;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 33px auto;
+    }
+
+    .trip div {
+        margin: 0 auto;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .travel-container img {
+        width: 90%;
+    }
+
+
+    /* this is world famus place style  */
+    .world-place-container {
+        display: flex;
+        gap: 50px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .famus-place {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .famus-place .item2 img {
+        margin-top: 0;
+    }
+
+    .world-place-container:nth-child(-n+1) {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* this is experiences style  */
+    .experience-container {
+        gap: 52px;
+        flex-direction: column;
+    }
+
+    .experience-container>div {
+        margin: 0 auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .experience-container div img {
+        width: 100%;
+    }
+
+
+
+    /* footer style  */
+
+    .footer-container {
+        gap: 5px;
+        flex-direction: column-reverse;
+    }
+
+    /* this is video container section  */
+    .app-link {
+        width: 100%;
+    }
+
+    .footer-container>div {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .footer-container>div .footer-menu {
+        display: flex;
+        gap: 0;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-container>div .footer-menu li {
+        margin: 0;
+    }
+
+}
